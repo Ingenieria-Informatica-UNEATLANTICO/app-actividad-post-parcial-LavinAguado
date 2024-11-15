@@ -1,0 +1,22 @@
+@startuml
+[*] --> EnEspera
+
+EnEspera--> Operativo
+Operativo--> Ruta
+Ruta--> FinServicio
+EnEspera--> NoOperativo
+NoOperativo--> FinServicio
+
+@enduml
+
+
+@startuml
+[*] --> InicioRuta
+
+InicioRuta--> ATiempo
+ATiempo--> FinRuta
+InicioRuta--> Incidencia
+Incidencia--> Retraso
+Retraso--> FinRuta
+
+@enduml
