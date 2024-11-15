@@ -32,7 +32,7 @@ Aquí puedes ver los diagramas con una iteracion mas junto con su código corres
 
 | Diagrama | Descripción |
 |----------|-------------|
-| ![Diagrama Clases](./images/clases.png) | [Ver código](./modelosUML/diagramaClases.puml) |
-| ![Diagrama Objetos](./images/objetos.png) | [Ver código](./modelosUML/diagramaObjetos.puml) |
-| ![Diagrama Estados1](./images/Estados1.png) | [Ver código](./modelosUML/diagramaEstados.puml) |
-| ![Diagrama Estados2](./images/Estados2.png) | [Ver código](./modelosUML/diagramaEstados.puml) |
+| ![Diagrama Clases](./images/ClasesIteracion.jpg) | [Ver código](./modelosUML/ClasesConIteracion.puml) |
+| ![Diagrama Objetos](./images/ObjetosIteracion.jpg) | [Ver código](./modelosUML/ObjetosConIteracion.puml) |
+| ![Diagrama Estados1](./images/Estados1Iteracion.jpg) | [Ver código](./modelosUML/EstadosConIteracion.puml) |
+| ![Diagrama Estados2](./images/Estados2Iteracion.jpg) | [Ver código](./modelosUML/EstadosConIteracion.puml) |

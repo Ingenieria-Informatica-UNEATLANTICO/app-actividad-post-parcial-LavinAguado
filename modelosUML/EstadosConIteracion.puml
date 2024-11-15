@@ -1,0 +1,28 @@
+@startuml
+[*] --> EnEspera : Inicio de servicio
+
+EnEspera --> Operativo : Servicio asignado
+Operativo --> Ruta : En ruta
+Ruta --> FinServicio : Finaliza la ruta
+EnEspera --> NoOperativo : Fallo en asignación
+NoOperativo --> FinServicio : Servicio cancelado
+
+
+@enduml
+
+
+@startuml
+[*] --> InicioRuta : Inicia recorrido
+
+InicioRuta --> ATiempo : Horario cumplido
+ATiempo --> FinRuta : Llegada a destino
+InicioRuta --> Incidencia : Problema detectado
+Incidencia --> Retraso : Ajuste de tiempo
+Retraso --> FinRuta : Llega a destino con retraso
+FinRuta --> [*] : Termina
+
+@enduml
+
+
+
+
