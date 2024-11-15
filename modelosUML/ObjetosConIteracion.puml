@@ -1,0 +1,60 @@
+@startuml
+
+' Objetos instanciados basados en las clases
+object Pasajero1 {
+    nombre = "Pedro Jimenez"
+}
+
+object Conductor1 {
+    nombre = "Aimar Aguilera"
+}
+
+object Incidencia1 {
+    tipo = " Averia "
+    descripcion = "Rueda Pinchada"
+}
+
+object Ruta1 {
+    nombre = "Porticada"
+}
+
+object Horario1 {
+    horaInicio = "16:30"
+    horaFin = "20:00"
+}
+
+object Parada1 {
+    nombre = " Sol "
+    ubicacion = "Centro"
+}
+
+object Parada2 {
+   nombre = " Luna "
+   ubicacion = "Playa"
+}
+
+object Flota1 {
+    vehiculo = "Autobús Electrico"
+    matricula = "2857ABC"
+}
+
+object Tarifa1 {
+    monto = " 0.70€ "
+}
+
+object Servicio1 {
+    estado = " Operativo "
+}
+
+' Relación entre objetos
+Ruta1 *-- Parada1 : contiene
+Ruta1 --> Horario1 : sigue
+Servicio1 --> Ruta1 : opera en
+Servicio1 --> Conductor1 : asignado a
+Servicio1 o-- Flota1 : utiliza
+Servicio1 --> Tarifa1 : aplica
+Pasajero1 --> Servicio1 : utiliza
+Incidencia1 --> Servicio1 : ocurre en
+Incidencia1 --> Ruta1 : afecta a
+
+@enduml

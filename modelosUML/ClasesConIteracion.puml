@@ -1,0 +1,48 @@
+@startuml
+
+class Pasajero 
+
+class Conductor 
+
+class Incidencia 
+
+class Ruta 
+
+class Horario 
+
+class Parada 
+
+class Flota 
+
+class Tarifa 
+
+class Servicio 
+
+' Relación de composición entre Ruta y Parada
+Ruta "1" *-- "1..*" Parada : contiene
+
+' Relación de asociación entre Ruta y Horario
+Ruta --> Horario : sigue
+
+' Relación de asociación entre Servicio y Ruta
+Servicio --> Ruta : opera en
+
+' Relación de asociación entre Servicio y Conductor
+Servicio "1" --> "1" Conductor : asignado a
+
+' Relación de agregación entre Servicio y Flota
+Servicio "1" o-- "1..*" Flota : utiliza
+
+' Relación de asociación entre Servicio y Tarifa
+Servicio --> Tarifa : aplica
+
+' Relación de asociación entre Pasajero y Servicio
+Pasajero --> Servicio : utiliza
+
+' Relación de asociación entre Incidencia y Servicio
+Incidencia --> Servicio : ocurre en
+
+' Relación de asociación entre Incidencia y Ruta
+Incidencia --> Ruta : afecta a
+
+@enduml
